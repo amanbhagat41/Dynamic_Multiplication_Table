@@ -1,0 +1,52 @@
+<!--
+File: index.html
+GUI Assignment: HW4 Using the jQuery Plugin/UI with Your Dynamic Table
+Aman Bhagat, Umass Lowell Computer Science, aman_bhagat@student.uml.edu
+Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by AB on Oct 24 5:51 pm
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mutiplication Table</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="heading">
+        <h1>Mutiplication Table</h1>
+    </div>
+    <form class="values" name = "mTable">
+        <div class="val">
+        <label for="minCol">Minimum Column Value:</label>
+        <input type="text" id="minCol" name="minCol" value = 0 ><br>
+        <div id="minColSlider"></div><br>
+        <label for="maxCol">Maximum Column Value:</label>
+        <input type="text" id="maxCol" name="maxCol" placeholder="Maximum Column" value = 0 ><br>
+        <div id="maxColSlider"></div><br>
+        <label for="minRow">Minimum Row Value:</label>
+        <input type="text" id="minRow" name="minRow" placeholder="Minimum Row" value = 0 ><br>
+        <div id="minRowSlider"></div><br>
+        <label for="maxRow">Maximum Row Value:</label>
+        <input type="text" id="maxRow" name="maxRow" placeholder="Maximum Row" value = 0 ><br>
+        <div id="maxRowSlider"></div><br>
+        </div>
+        <button id="submit" type="submit">Put Table in a New Tab</button>
+      </form>
+      <div id="errMes"></div>
+      <div id="table"></div>
+      <div id="tabs">
+        <ul>
+
+          <li class="tab"><a></a>
+            </li>
+            </ul>
+      </div>
+      <script src="js/script.js"></script>
+  </body>

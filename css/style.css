@@ -1,0 +1,81 @@
+/*
+File: .js
+GUI Assignment: HW4 Using the jQuery Plugin/UI with Your Dynamic Table
+Aman Bhagat, Umass Lowell Computer Science, aman_bhagat@student.uml.edu
+Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by AB on Oct 24 5:51 pm
+*/
+body {
+  text-align: center;
+  background-color: bisque;
+}
+form {
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+  border: solid black;
+  border-image: linear-gradient(
+      to right,
+      rgb(179, 80, 149) 25%,
+      yellow 25%,
+      yellow 50%,
+      red 50%,
+      red 75%,
+      teal 75%
+    )
+    5;
+}
+input {
+  margin-bottom: 10px;
+}
+.val {
+  text-align: right;
+}
+button {
+  font-size: 18px;
+}
+td,
+th {
+  /*styles the td and th */
+  padding: 15px 20px;
+  text-align: center;
+  padding: 7px;
+  border: #4e95f4 thin solid;
+}
+th {
+  /*styles just the th with different colors and font */
+  background-color: #ee9ca7;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+th:nth-child(1) {
+  color: white;
+}
+table{
+  margin: auto;
+}
+#table {
+  padding-top: 50px;
+  font-weight: bold;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+}
+th {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#eror{
+  color: red;
+  text-align: center;
+}
+#tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+
+#tabs div{
+  overflow-x: auto;
+  overflow-y: auto;
+}
