@@ -4,21 +4,22 @@ GUI Assignment: HW4 Using the jQuery Plugin/UI with Your Dynamic Table
 Aman Bhagat, Umass Lowell Computer Science, aman_bhagat@student.uml.edu
 Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or 
 excerpted for educational purposes with credit to the author. 
-updated by AB on Oct 24 5:51 pm
+updated by AB on Nov 13 4:30 pm
 */
 body {
   text-align: center; /* align to center   */
-  background-color: bisque;/* backgroudn color bisque   */
+  background-color: bisque; /* backgroudn color bisque   */
 }
-form { /* style the form  */
+form {
+  /* style the form  */
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   width: 400px;
   height: auto;
   border: solid black;
-  border-image: linear-gradient( /* make the border for the form  */
-      to right,
+  border-image: linear-gradient(
+      /* make the border for the form  */ to right,
       rgb(179, 80, 149) 25%,
       yellow 25%,
       yellow 50%,
@@ -28,58 +29,76 @@ form { /* style the form  */
     )
     5;
 }
-input { /* style the inputs   */
+input {
+  /* style the inputs   */
   margin-bottom: 10px;
 }
-.val {/* style the value inputs  */
+.val {
+  /* style the value inputs  */
   text-align: right;
 }
-button { /* style the button */
+button {
+  /* style the button */
   font-size: 18px;
 }
 td,
-th {  /*styles the td and th */
+th {
+  /*styles the td and th */
   padding: 5px;
-  text-align: center; 
+  text-align: center;
   border: #f44eba thin solid;
-
- 
 }
-th { /*styles just the th with bg color*/
+th {
+  /*styles just the th with bg color*/
   background-color: #ee9ca7;
   color: white;
 }
-th:nth-child(1) { /* the header is white  */
+th:nth-child(1) {
+  /* the header is white  */
   color: white;
 }
-table{ /* makes the table center   */
+table {
+  /* makes the table center   */
   margin: auto;
 }
-#table { /* makes the table scrollable   */
+#table {
+  /* makes the table scrollable   */
   padding-top: 30px;
   font-weight: bold;
   overflow-x: auto;
   overflow-y: auto;
   max-height: 500px;
 }
-th { /* makes the headers follow when scrolling  */
+th {
+  /* makes the headers follow when scrolling  */
   position: sticky;
   top: 0;
   left: 0;
 }
-tr:nth-child(even) {/*every even tr background color is grey */
+tr:nth-child(even) {
+  /*every even tr background color is grey */
   background-color: #eeeeee;
 }
-#table:hover tr:hover {/* when hovering over the schedule background color is pink*/
+#table:hover tr:hover {
+  /* when hovering over the schedule background color is pink*/
   background-color: #ffdde1;
 }
-#eror{
+#eror {
+  /*styles the error messages*/
   color: red;
   text-align: center;
 }
-#tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+.error{
+  color: red;
+  text-align: center;
+}
+#tabs li .ui-icon-close {/*styles the close single tab 'x'*/
+  float: left;
+  margin: 0.4em 0.2em 0 0;
+  cursor: pointer;
+}
 
-#tabs div{
+#tabs div {/*makes the tabs have an overflow*/
   overflow-x: auto;
   overflow-y: auto;
   max-height: 500px;
