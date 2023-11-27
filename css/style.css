@@ -83,11 +83,6 @@ tr:nth-child(even) {
   /* when hovering over the schedule background color is pink*/
   background-color: #ffdde1;
 }
-#eror {
-  /*styles the error messages*/
-  color: red;
-  text-align: center;
-}
 .error{
   color: red;
   text-align: center;
