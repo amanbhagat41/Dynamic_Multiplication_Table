@@ -8,6 +8,7 @@ Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or
 excerpted for educational purposes with credit to the author. 
 updated by AB on Nov 13 4:30 pm
 */
+
 makeTable();
 $(function () {
   // makeTable()
