@@ -143,11 +143,15 @@ $(function () {
 var numTab = 1;
 $(function () { //https://codepen.io/bobo52310/pen/ZEwBar https://codepen.io/lalawork513/details/xRparL I used these two codepens to help figure out adding tabs
   $("#submit").click(function (form) {
+  var minCol = Number(document.getElementById("minCol").value);
+  var maxCol = Number(document.getElementById("maxCol").value);
+  var minRow = Number(document.getElementById("minRow").value);
+  var maxRow = Number(document.getElementById("maxRow").value);
     makeTable();
     console.log("Hi");
     $("#tabs").tabs();
     console.log(numTab);
-    $("div#tabs ul").append('<li class="tab"><input type="checkbox"><a href="#tab-' + numTab +'">Table ' +numTab + '</a><span class="ui-icon ui-icon-close""></li>'); //creates a tab
+    $("div#tabs ul").append('<li class="tab"><input type="checkbox"><a href="#tab-' + numTab +'"> ' +minCol + " to "+ maxCol+" by "+minRow + " to "+ maxRow+'</a><span class="ui-icon ui-icon-close""></li>'); //creates a tab
     $("div#tabs").append('<div id="tab-' + numTab + '">' + $("#table").html() + "</div>"); // https://stackoverflow.com/questions/34761583/how-to-clone-the-content-of-a-tab-to-the-rest-of-the-tabs-jquery puts table into tab
     $("div#tabs").tabs("refresh");
     $("#tabs").tabs("option", "active", -1); //goes into tab
