@@ -1,12 +1,14 @@
 /*
 File: script.js
 GUI Assignment: HW4 Using the jQuery Plugin/UI with Your Dynamic Table
+making table dynmaic with sliders and adding tabs
+which can deleted singulary or selected deleted
 Aman Bhagat, Umass Lowell Computer Science, aman_bhagat@student.uml.edu
 Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or 
 excerpted for educational purposes with credit to the author. 
 updated by AB on Nov 13 4:30 pm
 */
-
+makeTable();
 $(function () {
   // makeTable()
   $("#minColSlider").slider({ //creates a slider for mincol
